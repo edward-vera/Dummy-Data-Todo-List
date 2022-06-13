@@ -36,12 +36,21 @@
     }
     
     const populateTodos = () => {
-        let newListItem = document.createElement("li")
-        let text = document.createTextNode(arrayOfTodos[0].userId)
-        newListItem.appendChild(text)
-        Todolist.appendChild(newListItem)
-        console.log(arrayOfTodos[0].userId)
+            arrayOfTodos.forEach (todo => {
+            let newListItem = document.createElement("li")
+            let text = document.createTextNode(todo.userId)
+            newListItem.appendChild(text)
+            Todolist.appendChild(newListItem)
+            // console.log(arrayOfTodos[0].userId)
+        })
+
     }
+
+    function customReset() {
+        document.getElementById("todo-list").innerHTML = ("");
+     }
+
+    // const result = userId.filter((userId) => userId.number < 10);
         // console.log('onlyTitles', onlyTitles)
 
 

@@ -7,9 +7,12 @@
     <title>Dummy Data Todo List</title>
 </head>
 <body>
-    <button onclick="fetchTodos()">Fetch Todos</button>
-    <button onclick="logTodos()">Log Todos</button>
-    <button onclick="populateTodos()">Populate Todos</button>
+    <div id="todo">
+        <button onclick="fetchTodos()">Fetch Todos</button>
+        <button onclick="logTodos()">Log Todos</button>
+        <button onclick="populateTodos()">Populate Todos</button>
+        <input type="button" name="reset" onclick="customReset()" value="Reset" id="reset1">
+    </div>
     <ol id="todo-list">
     <!-- LIs will go here -->
     </ol>
