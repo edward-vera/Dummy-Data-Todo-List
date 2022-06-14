@@ -35,15 +35,25 @@
         console.log(arrayOfTodos)
     }
     
-    const populateTodos = () => {
+    // const populateTodos = () => {
+    //         arrayOfTodos.forEach (todo => {
+    //         let newListItem = document.createElement("li")
+    //         let text = document.createTextNode(todo.userId)
+    //         newListItem.appendChild(text)
+    //         Todolist.appendChild(newListItem)
+    //         // console.log(arrayOfTodos[0].userId)
+    //     })
+
+    // }
+
+    const grabId = () => {
             arrayOfTodos.forEach (todo => {
-            let newListItem = document.createElement("li")
+            let newListItem = document.createElement('li')
             let text = document.createTextNode(todo.userId)
             newListItem.appendChild(text)
             Todolist.appendChild(newListItem)
-            // console.log(arrayOfTodos[0].userId)
-        })
-
+            console.log(arrayOfTodos[0].userId)
+        })        
     }
 
     function customReset() {
@@ -52,5 +62,6 @@
 
     // const result = userId.filter((userId) => userId.number < 10);
         // console.log('onlyTitles', onlyTitles)
+
 
 
