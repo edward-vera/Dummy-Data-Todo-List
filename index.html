@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy Data Todo List</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
-    <button onclick="populateTodos()">Populate Todos</button>
+    <button onclick="populateTodos()">Populate Todos</button><br />
+    <form>
+      <label for="quantity">UserID (between 1 and 10):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" />
+    </form>
+    <button onclick="userID(this)">Populate Todos By ID</button>
+    <button onclick="completedTodos()">Completed Todos</button>
+    <button onclick="incompleteTodos()">Incomplete Todos</button>
+
     <ol id="todo-list">
-    <!-- LIs will go here -->
+      <!-- LIs will go here -->
     </ol>
+    <ol id="todo-list-by-ID">
+      <!-- LIs will go here -->
+    </ol>
+    </form>
+    <input type="reset"></input>
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>
